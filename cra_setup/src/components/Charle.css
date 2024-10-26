@@ -1,0 +1,52 @@
+.main-bar{
+    background:black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky ;
+    
+}
+
+.page{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding: 0 20px;
+    background-image: (url(image/bikebackground.jpeg));
+}
+
+.page li:hover{
+    color: #fff5a5;
+    transform: scale(1.05);
+
+}
+
+.page li:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.page li a {
+    color: #fff5a5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .page {
+      flex-direction: column;
+      gap: 20px;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+  }
